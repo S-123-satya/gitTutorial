@@ -24,11 +24,18 @@
     <ul id="items" class="list-group">
       <li class="list-group-item">Item 1</li>
       <li class="list-group-item">Item 2</li>
-      <li class="list-group-item">Item 3</li>
+      <li class="list-group-item" id="bgcolor">Item 3</li>
       <li class="list-group-item">Item 4</li>
     </ul>
    </div>
   </div>
-
+  <script>
+    const color=document.getElementById('bgcolor');
+    color.style.backgroundColor="green";
+    const demoClass=document.querySelectorAll('li');
+    for (i = 0; i < demoClass.length; i++) {
+demoClass[i].style.fontWeight = 'bold';
+}
+</script>
 </body>
 </html>
