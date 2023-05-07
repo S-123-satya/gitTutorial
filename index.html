@@ -34,8 +34,11 @@
     const color=document.getElementById('bgcolor');
     color.style.backgroundColor="green";
     const demoClass=document.querySelectorAll('li');
+    demoClass[1].style.backgroundColor='green';
+    demoClass[2].hidden=true;
     for (i = 0; i < demoClass.length; i++) {
-demoClass[i].style.fontWeight = 'bold';
+      if(i%2==1)
+        demoClass[i].style.backgroundColor = 'green';
 }
 </script>
 </body>
