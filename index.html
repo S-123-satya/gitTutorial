@@ -28,6 +28,9 @@
       <li class="list-group-item">Item 4</li>
       <li>Item 5</li>
     </ul>
+    <div>
+      <img src="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwj-3YKS4uP-AhW6b2wGHdSBCBQQPAgI" alt="google pic">
+    </div>
    </div>
   </div>
   <script>
@@ -40,6 +43,19 @@
       if(i%2==1)
         demoClass[i].style.backgroundColor = 'green';
 }
+const div = document.querySelector('div');
+div.nextElementSibling.style.background =
+'coral';
+div.previousElementSibling.style.background =
+'aquamarine';
+// Apply style to div
+div.setAttribute('style', 'text-align: center');const img = document.querySelector('img');
+img.hasAttribute('src'); // returns
+true
+img.getAttribute('src'); // returns
+"...shark.png"
+img.removeAttribute('src'); // remove the
+
 </script>
 </body>
 </html>
